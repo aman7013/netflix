@@ -1,0 +1,107 @@
+
+  /* structure */
+.d-display {
+   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  background-color:#000000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 10%;
+  padding-left: 20%;
+ 
+ 
+  
+}
+.d-details,
+.d-imgs {
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.d-details h2
+{
+  color:white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.d-details .faq p
+{
+  color: #74613C;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+footer {
+  height: 10vh;
+}
+details[open],
+details summary,
+.d-imgs {
+  display: block;
+  width: 100% !important;
+}
+details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:2%;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 24px;
+    background-color:#2D2D2D;
+   color: white;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+details summary:after {
+  content: "+";
+  font-size: 2rem;
+  transition: 0.3s;
+  transform: rotate(90deg);
+
+}
+
+/* transitions */
+details {
+  margin-bottom: 1rem;
+  height: 4rem;
+  transition: height 0.3s ease;
+    width: 100%;
+}
+details[open] {
+  height: 10rem;
+}
+details p {
+  height: fit-content;
+  padding: 1rem;
+}
+details[open] summary:after {
+  transform: rotate(-90deg);
+}
+
+/* Imgs */
+.imgs {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  border-radius: 2rem;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  body,
+  .d-display {
+    
+    width: 100%;
+  }
+}
+

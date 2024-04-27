@@ -147,7 +147,7 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
 
 
 
-
+<?php include 'footer.php';?>
 
 
 </body>
